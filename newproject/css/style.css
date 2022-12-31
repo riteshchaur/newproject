@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*css variable*/
+:root{
+    --navbar-height: 59px;
+}
+/*navigation bar*/
+
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(216, 182, 13);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+ul{
+    display:flex;
+    margin-left: 750px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none; 
+    border-radius: 20px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+
+    background-color: white;
+    
+}
+
+/*home section*/
+
+#Home{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 660px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Home::before{
+    
+    content: "";
+    background: url('../IIMTU.webp') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    height: 642px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px 25px;
+    border-radius: 12px;
+    padding: 23px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+/*utility class*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: black;
+    
+}
+.center{
+    margin: 20px auto;
+   
+    text-align: center;
+    color: black
+    
+    
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+#Home p{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: all 2s;
+}
+.btn:hover{
+    background-color: rgb(179, 159, 58);
+
+}
+
+
+#client-section{
+    
+    position: relative;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../winter.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+#clients{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    
+}
+
+#clients img{
+    height: 124px;
+}
+
+.client-items{
+    padding: 34px;
+}
+
+.contact{
+    position: relative;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+#contact-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+#contact::before{
+    content:"";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url('../dresden.jpg') no-repeat center center/cover;
+}
+
+footer .center{
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 9px;
+}
